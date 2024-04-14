@@ -1,0 +1,13 @@
+<div class="pensamento {{ atividade.modelo }} ff-roboto-mono" [ngClass]="larguraAtividade()">
+  <img src="/assets/imagens/{{ atividade.modelo }}.png" alt="Aspas coloridas">
+  <p class="conteudo">{{ atividade.atividade }}</p>
+  <p class="autoria"><b>{{ atividade.classificacao }}</b></p>
+  <div class="acoes">
+    <button class="botao-editar">
+      <img src="/assets/imagens/icone-editar.png" routerLink="/atividades/editarAtividade/{{atividade.id}}" alt="Ícone de editar">
+    </button>
+    <button class="botao-excluir" routerLink="/atividades/excluirAtividade/{{atividade.id}}">
+      <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">
+    </button>
+  </div>
+</div>
